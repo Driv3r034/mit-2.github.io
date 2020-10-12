@@ -66,7 +66,7 @@ h1, h2 {
     padding: 2px;
 }
 
-.info_img img{
+.info_img img, .flats img{
     width: 100%;
 }
 
@@ -120,7 +120,7 @@ footer {
 .product:nth-child(3) {width: 31%; text-align: justify; border-right: 1px solid white; padding: 5px;}
 
 
-a[href^="##"]{
+a[href^=" "]{
     display: block;
     width: 100%;
     background: rgb(165, 171, 172);
@@ -133,7 +133,7 @@ a[href^="##"]{
     text-shadow: 0 1px 1px #555;
   }
 
-  a[href^="##"]:hover{
+  a[href^=" "]:hover{
     box-shadow: 0 0 0 2px rgb(240, 159, 54)
   }
 
