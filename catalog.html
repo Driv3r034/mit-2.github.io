@@ -7,211 +7,208 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
-    <style>
-        table, td, th {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-       </style>
 </head>
 <body>
-    <div class="container">
         <header>
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <a href="index.html">
+                            <img src="img/Logo.jpg" alt="Логотип АН Квадратные метры" />
+                        </a>
+                    </div>
 
-            <div class="cols">
-                <div class="col">
-                    <a href="index.html">
-                        <img src="img/Logo.jpg" alt="Логотип АН Квадратные метры" />
-                    </a>
+                    <div class="col">
+                        <nav class="menu-top">
+                            <a href="index.html">Главная</a>
+                            <a href="catalog.html">Каталог</a>
+                            <a href="service.html">Услуги</a>
+                            <a href="about.html">О компании</a>
+                            <a href="contact.html">Контакты</a>
+                        </nav>
+                    </div>
                 </div>
-
-                <div class="col">
-                    <nav class="menu-top">
-                        <a href="index.html">Главная</a>
-                        <a href="catalog.html">Каталог</a>
-                        <a href="service.html">Услуги</a>
-                        <a href="about.html">О компании</a>
-                        <a href="contact.html">Контакты</a>
-                    </nav>
-                </div>
-            </div>
+            </div>  
         </header>
         <hr>
-            <h2>Купить квартиру в Москве и Московской области</h2>
+        <section class="main">
+            <div class="container">
+                <h2>Купить квартиру в Москве и Московской области</h2>
 
-            <form action="">
-                <div class="row">
-                    <input required type="text" name="name" value="" style="width: 150px"  placeholder="Общая площадь" autocomplete="off"/>
-                </div>
-
-                <div class="row">
-                    <input required type="text" name="name" value="" style="width: 150px"  placeholder="Цена от" autocomplete="off"/><br>
-                    <input required type="text" name="name" value="" style="width: 150px"  placeholder="Цена до" autocomplete="off"/>
-                </div>
-
-                <div class="row"><span><em>Количество комнат</em></span>
-                    <br>
-                    <label>
-                        <input required type="radio" name="time" value=1/>1-комн.</label>
-                    <label>
-                        <input required type="radio" name="time" value=2/>2-комн.</label>
-                    <label>
-                        <input required type="radio" name="time" value=3/>3-комн.</label><br>
-                    <label>
-                        <input required type="radio" name="time" value=4/>4-комн.</label>
-                    <label>
-                        <input required type="radio" name="time" value=5/>Студия</label>
-
-                </div>
-
-                    <div class="row"><span><em>Район</em></span>
-                    <select name="subject">
-                        <option value="1">Север</option>
-                        <option value="2">Юг</option>
-                        <option value="3">Запад</option>
-                        <option value="3">Восток</option>
-                    </select><br><br>
-                        <input type="submit" value="Найти"/>
+                <form action="">
+                    <div class="row">
+                        <input required type="text" name="name" value="" placeholder="Общая площадь" autocomplete="off"/>
                     </div>
-             
-                             
-              </form>
 
-            <div class="flats">
-                <div class="product">
-                    <h2 class="product-name">Студия</h2>
-                
-                    <span class="product-desc">Cветлая уютная квартира с отличной планировкой в чистом зеленом районе города. Дом расположен в глубине спального района, вдали от магистралей, большая парковка для жителей дома. Рядом расположена красивая парковая зона, большой стадион и спорткомплекс. В шаговой доступности сетевые супермаркеты, торговые центры, банк. Рядом с домом д/сады, школа. Отличная транспортная доступность.</span>
-                
-                    <img src="img/flat1.jpg" class="product-img" alt="квартира-студия">
-                
-                    <div class="offer"> 
-                        <span class="product-price">8 800 000,00</span>
-                        <span class="product-price-currency">RUB</span>
+                    <div class="row">
+                        <input required type="text" name="name" value="" placeholder="Цена от" autocomplete="off"/><br>
+                        <input required type="text" name="name" value="" placeholder="Цена до" autocomplete="off"/>
                     </div>
+
+                    <div class="row"><span><em>Количество комнат</em></span>
+                        <br>
+                        <label>
+                            <input required type="checkbox" name="rooms" value=1/>1-комн.</label>
+                        <label>
+                            <input required type="checkbox" name="rooms" value=1/>2-комн.</label>
+                        <label>
+                            <input required type="checkbox" name="rooms" value=1/>3-комн.</label><br>
+                        <label>
+                            <input required type="checkbox" name="rooms" value=1/>4-комн.</label>
+                        <label>
+                            <input required type="checkbox" name="rooms" value=1/>Студия</label>
+
+                    </div>
+
+                        <div class="row"><span><em>Направление</em></span>
+                        <select name="subject">
+                            <option value="1">Север</option>
+                            <option value="2">Юг</option>
+                            <option value="3">Запад</option>
+                            <option value="3">Восток</option>
+                        </select><br><br>
+                            <input type="submit" value="Найти"/>
+                        </div>
+                
+                                
+                </form>
+
+                <div class="flats">
+                    <div class="product">
+                        <h2 class="product-name">Студия</h2>
                     
-                    <span class="product-address"><a href="#">г. Москва, ул. Сталеваров д. 26, корп. 2</a></span><br>
-                    <span class="product-map"><a href="#">Показать на карте</a></span><br>
-                    <span class="product-rooms">Студия</span>
-                    <span class="product-square">56,7 кв.м.</span><br>
-                    <span class="product-type-house">Дом кирпичный</span><br>
-                    <span class="product-level">2/9 этаж</span><br>
-                    <a href=" ">Подробнее</a>
-               </div>
-
-                <div class="product">
-                    <h2 class="product-name">3-х комнатная квартира</h2>
-                
-                    <span class="product-desc">Cветлая уютная квартира с отличной планировкой в чистом зеленом районе города. Дом расположен в глубине спального района, вдали от магистралей, большая парковка для жителей дома. Рядом расположена красивая парковая зона, большой стадион и спорткомплекс. В шаговой доступности сетевые супермаркеты, торговые центры, банк. Рядом с домом д/сады, школа. Отличная транспортная доступность.</span>
-                
-                    <img src="img/flat2.jpg" class="product-img" alt="3-комнатная квартира">
-                
-                    <div class="offer"> 
-                        <span class="product-price">10 500 000,00</span>
-                        <span class="product-price-currency">RUB</span>
-                    </div>
+                        <span class="product-desc">Cветлая уютная квартира с отличной планировкой в чистом зеленом районе города. Дом расположен в глубине спального района, вдали от магистралей, большая парковка для жителей дома. Рядом расположена красивая парковая зона, большой стадион и спорткомплекс. В шаговой доступности сетевые супермаркеты, торговые центры, банк. Рядом с домом д/сады, школа. Отличная транспортная доступность.</span>
                     
-                    <span class="product-address"><a href="#">г. Москва,проезд. Серебрякова д. 9</a></span><br>
-                    <span class="product-map"><a href="#">Показать на карте</a></span><br>
-                    <span class="product-rooms">3-х комнатная</span>
-                    <span class="product-square">48,8 кв.м.</span><br>
-                    <span class="product-type-house">Панельный</span><br>
-                    <span class="product-level">12/14 этаж</span><br>
-                    <a href=" ">Подробнее</a>
+                        <img src="img/flat1.jpg" class="product-img" alt="квартира-студия">
+                    
+                        <div class="offer"> 
+                            <span class="product-price">8 800 000,00</span>
+                            <span class="product-price-currency">RUB</span>
+                        </div>
+                        
+                        <span class="product-address"><a href="#">г. Москва, ул. Сталеваров д. 26, корп. 2</a></span><br>
+                        <span class="product-map"><a href="#">Показать на карте</a></span><br>
+                        <span class="product-rooms">Студия</span>
+                        <span class="product-square">56,7 кв.м.</span><br>
+                        <span class="product-type-house">Дом кирпичный</span><br>
+                        <span class="product-level">2/9 этаж</span><br>
+                        <a href=" ">Подробнее</a>
                 </div>
 
-                <div class="product">
-                    <h2 class="product-name">2-х комнатная квартира</h2>
-                
-                    <span class="product-desc">Cветлая уютная квартира с отличной планировкой в чистом зеленом районе города. Дом расположен в глубине спального района, вдали от магистралей, большая парковка для жителей дома. Рядом расположена красивая парковая зона, большой стадион и спорткомплекс. В шаговой доступности сетевые супермаркеты, торговые центры, банк. Рядом с домом д/сады, школа. Отличная транспортная доступность.</span>
-                
-                    <img src="img/flat3.jpg" class="product-img" alt="2-комнатная квартира">
-                
-                    <div class="offer"> 
-                        <span class="product-price">15 000 000,00</span>
-                        <span class="product-price-currency">RUB</span>
-                    </div>
+                    <div class="product">
+                        <h2 class="product-name">3-х комнатная квартира</h2>
                     
-                    <span class="product-address"><a href="#">г. Москва, проезд.Чечерский д. 124, корп. 3</a></span><br>
-                    <span class="product-map"><a href="#">Показать на карте</a></span><br>
-                    <span class="product-rooms">2-х комнатная</span>
-                    <span class="product-square">74,77 кв.м.</span><br>
-                    <span class="product-type-house">Панельный</span><br>
-                    <span class="product-level">17/17 этаж</span><br>
-                    <a href=" ">Подробнее</a>
+                        <span class="product-desc">Очень уютная квартира с отличным свежим ремонтом. Квартира очень удобно перепланирована в 3-х комнатную. В спальной комнате имеется гардеробная.  Остекленная лоджия с отделкой. Зеленый двор с огороженной территорией, с детскими, спортивными площадками и паркингом. Отличное местоположение: в пешей доступности 3 детских сада, школа, поликлиника, супермаркеты, салоны красоты и т.д.</span>
+                    
+                        <img src="img/flat2.jpg" class="product-img" alt="3-комнатная квартира">
+                    
+                        <div class="offer"> 
+                            <span class="product-price">10 500 000,00</span>
+                            <span class="product-price-currency">RUB</span>
+                        </div>
+                        
+                        <span class="product-address"><a href="#">г. Москва,проезд. Серебрякова д. 9</a></span><br>
+                        <span class="product-map"><a href="#">Показать на карте</a></span><br>
+                        <span class="product-rooms">3-х комнатная</span>
+                        <span class="product-square">48,8 кв.м.</span><br>
+                        <span class="product-type-house">Панельный</span><br>
+                        <span class="product-level">12/14 этаж</span><br>
+                        <a href=" ">Подробнее</a>
+                    </div>
+
+                    <div class="product">
+                        <h2 class="product-name">2-х комнатная квартира</h2>
+                    
+                        <span class="product-desc">Двухкомнатная квартира с удобной планировкой, с большой кухней и застекленной лоджией. Квартира расположена в тихом зелёном парковом районе города, в шаговой доступности от метро. Рядом расположены сетевые продуктовые магазины, магазины, поликлиники, сады и школы, парк с многочисленными вело и пешеходными дорожками, различными зонами отдыха и спортивными объектами. Удобный выезд на МКАД.</span>
+                    
+                        <img src="img/flat3.jpg" class="product-img" alt="2-комнатная квартира">
+                    
+                        <div class="offer"> 
+                            <span class="product-price">15 000 000,00</span>
+                            <span class="product-price-currency">RUB</span>
+                        </div>
+                        
+                        <span class="product-address"><a href="#">г. Москва, проезд.Чечерский д. 124, корп. 3</a></span><br>
+                        <span class="product-map"><a href="#">Показать на карте</a></span><br>
+                        <span class="product-rooms">2-х комнатная</span>
+                        <span class="product-square">74,77 кв.м.</span><br>
+                        <span class="product-type-house">Панельный</span><br>
+                        <span class="product-level">17/17 этаж</span><br>
+                        <a href=" ">Подробнее</a>
+                    </div>
                 </div>
+
+                <div class="flats">
+                    <div class="product">
+                        <h2 class="product-name">4-х комнатная квартира</h2>
+                    
+                        <span class="product-desc">Отличная 4-х комнатная квартира с Евроремонтом на 2-м этаже. Полы дубовый паркет. Развитая инфраструктура: в шаговой доступности большие парковые зоны с прудами, велодорожками, детскими площадками и площадками для выгула собак. Двор зеленый, большой, ухоженный с детскими площадками.Развитая инфраструктура: детские сады, школы, поликлиника, торговые центры, супермаркеты, фитнес клуб, парковка.</span>
+                    
+                        <img src="img/flat4.jpg" class="product-img" alt="4-комнатная квартира">
+                    
+                        <div class="offer"> 
+                            <span class="product-price">18 700 000,00</span>
+                            <span class="product-price-currency">RUB</span>
+                        </div>
+                        
+                        <span class="product-address"><a href="#">г. Москва, пр-кт. Маршала Жукова д. 20, корп. 3</a></span><br>
+                        <span class="product-map"><a href="#">Показать на карте</a></span><br>
+                        <span class="product-rooms">4-х комнатная</span>
+                        <span class="product-square">85 кв.м.</span><br>
+                        <span class="product-type-house">Кирпичный</span><br>
+                        <span class="product-level">6/16 этаж</span><br>
+                        <a href=" ">Подробнее</a>
+                    </div>
+
+                    <div class="product">
+                        <h2 class="product-name">1-комнатная квартира</h2>
+                    
+                        <span class="product-desc">Просторная 1-комнатная квартира с качественным ремонтом, встроенная кухня из массива, остекленная лоджия с отделкой, новые стеклопакеты и межкомнатные двери. В комнатах установлена система кондиционирования. Развитая инфраструктура: все в пешей доступности, во дворе площадки, сквер с прогулочной зоной, въезд огорожен шлагбаумами. В подъезде чисто, имеется консьерж.</span>
+                    
+                        <img src="img/flat5.jpg" class="product-img" alt="1-комнатная квартира">
+                    
+                        <div class="offer"> 
+                            <span class="product-price">4 100 000,00</span>
+                            <span class="product-price-currency">RUB</span>
+                        </div>
+                        
+                        <span class="product-address"><a href="#">д. Сабурово, ул. Заречная д. 3</a></span><br>
+                        <span class="product-map"><a href="#">Показать на карте</a></span><br>
+                        <span class="product-rooms">1-комнатная</span>
+                        <span class="product-square">48,3 кв.м.</span><br>
+                        <span class="product-type-house">Кирпичный</span><br>
+                        <span class="product-level">4/4 этаж</span><br>
+                        <a href=" ">Подробнее</a>
+                    </div>
             </div>
-
-            <div class="flats">
-                <br>
-                <div class="product">
-                    <h2 class="product-name">4-х комнатная квартира</h2>
-                
-                    <span class="product-desc">Cветлая уютная квартира с отличной планировкой в чистом зеленом районе города. Дом расположен в глубине спального района, вдали от магистралей, большая парковка для жителей дома. Рядом расположена красивая парковая зона, большой стадион и спорткомплекс. В шаговой доступности сетевые супермаркеты, торговые центры, банк. Рядом с домом д/сады, школа. Отличная транспортная доступность.a</span>
-                
-                    <img src="img/flat4.jpg" class="product-img" alt="4-комнатная квартира">
-                
-                    <div class="offer"> 
-                        <span class="product-price">18 700 000,00</span>
-                        <span class="product-price-currency">RUB</span>
-                    </div>
-                    
-                    <span class="product-address"><a href="#">г. Москва, пр-кт. Маршала Жукова д. 20, корп. 3</a></span><br>
-                    <span class="product-map"><a href="#">Показать на карте</a></span><br>
-                    <span class="product-rooms">4-х комнатная</span>
-                    <span class="product-square">85 кв.м.</span><br>
-                    <span class="product-type-house">Кирпичный</span><br>
-                    <span class="product-level">6/16 этаж</span><br>
-                    <a href=" ">Подробнее</a>
-                </div>
-
-                <div class="product">
-                    <h2 class="product-name">1-комнатная квартира</h2>
-                
-                    <span class="product-desc">Cветлая уютная квартира с отличной планировкой в чистом зеленом районе города. Дом расположен в глубине спального района, вдали от магистралей, большая парковка для жителей дома. Рядом расположена красивая парковая зона, большой стадион и спорткомплекс. В шаговой доступности сетевые супермаркеты, торговые центры, банк. Рядом с домом д/сады, школа. Отличная транспортная доступность.</span>
-                
-                    <img src="img/flat5.jpg" class="product-img" alt="1-комнатная квартира">
-                
-                    <div class="offer"> 
-                        <span class="product-price">4 100 000,00</span>
-                        <span class="product-price-currency">RUB</span>
-                    </div>
-                    
-                    <span class="product-address"><a href="#">д. Сабурово, ул. Заречная д. 3</a></span><br>
-                    <span class="product-map"><a href="#">Показать на карте</a></span><br>
-                    <span class="product-rooms">1-комнатная</span>
-                    <span class="product-square">48,3 кв.м.</span><br>
-                    <span class="product-type-house">Кирпичный</span><br>
-                    <span class="product-level">4/4 этаж</span><br>
-                    <a href=" ">Подробнее</a>
-                </div>
-            </div>
+        </div>
+    </section>
+                <footer>
+                    <div class="container"> 
+                        <div class="cols">
+                            <div class="footer-col">
+                                <p>&copy; 2020 <strong><em>Агентство недвижимости "Квадратные метры"</em></strong></p>
+                            </div>
             
-                <footer>  
-                    <div class="cols">
-                        <div class="footer-col">
-                            <p>&copy; 2020 <strong><em>Агентство недвижимости "Квадратные метры"</em></strong></p>
-                        </div>
-        
-                        <div class="footer-col">
-                            <ul>
-                                <li><a href="index.html">Главная</a></li>
-                                <li><a href="catalog.html">Каталог</a></li>
-                                <li><a href="service.html">Услуги</a></li>
-                                <li><a href="about.html">О компании</a></li>
-                                <li><a href="contact.html">Контакты</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="footer-col">
-                            <p>Адрес: г. Москва, ул. Флотская, дом 6/21</p>
-                            <p>Телефон: <a href="tel:+74951111111">+7 495 111-11-11</a></p>
-                            <p>E-mail: <a href="mailto:info@m2.ru">info@m2.ru</a></p>
+                            <div class="footer-col">
+                                <ul>
+                                    <li><a href="index.html">Главная</a></li>
+                                    <li><a href="catalog.html">Каталог</a></li>
+                                    <li><a href="service.html">Услуги</a></li>
+                                    <li><a href="about.html">О компании</a></li>
+                                    <li><a href="contact.html">Контакты</a></li>
+                                </ul>
+                            </div>
+            
+                            <div class="footer-col">
+                                <p>Адрес: г. Москва, ул. Флотская, дом 6/21</p>
+                                <p>Телефон: <a href="tel:+74951111111">+7 495 111-11-11</a></p>
+                                <p>E-mail: <a href="mailto:info@m2.ru">info@m2.ru</a></p>
+                            </div>
                         </div>
                     </div>
                 </footer>
 
-    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
