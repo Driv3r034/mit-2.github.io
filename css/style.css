@@ -1,10 +1,12 @@
 *  {
     font-family: sans-serif;
     box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
 }
 
 .container{
-    width: 1500px;
+    width: 1024px; 
     margin: auto;
     /* text-align: justify; */
   }
@@ -12,7 +14,10 @@
 h1, h2 {
     text-align: center;
     padding-top: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .cols {
@@ -22,33 +27,35 @@ h1, h2 {
     text-align: justify;
     /* border: 1px solid rgba(0, 0, 0, 0.363);
     box-shadow: 0 0 5px; */
+
 }
 
 .col {
     display: table-cell;
     vertical-align: middle;
-    /* border: 1px solid rgba(0, 0, 0, 0.363); */
-    /* box-shadow: 0 0 5px; */
+    /* border: 1px solid rgba(0, 0, 0, 0.363);
+    box-shadow: 0 0 5px; */
 }
 
-.cols .col:nth-child(1) {width: 10%; }
-.cols .col:nth-child(2) {width: 90%;}
+.cols .col:nth-child(1) {width: 20%; }
+.cols .col:nth-child(2) {width: 80%;}
 
 .col .menu-top {
     text-align: center;
 }
 
-.menu-top a {
+.col .menu-top a {
     color: #000000;
     text-decoration: none;
     width: 100%;
     height: 50px;
     line-height: 50px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500, bold;
 }
 
 .menu-top a:hover {
@@ -118,17 +125,17 @@ footer {
     height: 700px;
 }
 
-.product:nth-child(1) {width: 31%; text-align: justify; border-right: 1px solid white; margin-left: 30px; padding: 5px;}
+.product:nth-child(1) {width: 30%; text-align: justify; border-right: 1px solid white; margin-left: 30px; padding: 5px;}
 
-.product:nth-child(2) {width: 31%; text-align: justify; border-right: 1px solid white; margin-left: 30px; margin-right: 30px; padding: 5px;}
+.product:nth-child(2) {width: 30%; text-align: justify; border-right: 1px solid white; margin-left: 30px; margin-right: 30px; padding: 5px;}
 
-.product:nth-child(3) {width: 31%; text-align: justify; border-right: 1px solid white; padding: 5px;}
+.product:nth-child(3) {width: 30%; text-align: justify; border-right: 1px solid white; padding: 5px;}
 
 
-a[href^=" "]{
+a[href^=" "], .button {
     display: block;
     width: 100%;
-    background: rgb(165, 171, 172);
+    background: #ff680b;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -146,10 +153,10 @@ a[href^=" "]{
     box-shadow: 0 0 0 2px rgb(202, 207, 207)
   } */
 
-form {
+form.catalog {
     display: table;
     border-collapse: collapse;
-    width: 55%;
+    width: 97%;
     margin-left: 30px;
 }
 
@@ -157,22 +164,31 @@ form {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    width: 150px;
+    width: 300px;
     /* border: 1px solid black; */
 }
 
-form input {
+form input:not(.button) {
     margin-top: 5px;
     height: 20px;
 }
 
-.row:nth-child(1) {width: 20%;}
+.catalog > .row:nth-child(1) {width: 20%;}
 
-.row:nth-child(2) {width: 20%; padding-left: 30px;}
+.catalog > .row:nth-child(2) {width: 20%; padding-left: 20px;}
 
-.row:nth-child(3) {width: 40%; text-align: center;}
+.catalog > .row:nth-child(3) {width: 30%; padding-left: 20px; text-align: center;}
 
-.row:nth-child(4) {width: 20%; text-align: center;}
+.catalog > .row:nth-child(4) {width: 20%; text-align: center;}
+
+.catalog input:required {
+    height: 30px;
+}
+
+select {
+    height: 30px;
+    width: 100px;
+}
 
 .staff {
     display: table;
@@ -181,9 +197,12 @@ form input {
 }
 
 .employee {
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     text-align: center;
+    width: 33%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .employee img{
@@ -195,6 +214,8 @@ form input {
     text-align: center;
     font-size: 1.4rem;
     text-shadow: 0.5px 0.5px 0px;
+    padding-left: 15px;
+    padding-top: 30px;
 }
 
 .service_img img{
@@ -205,3 +226,49 @@ form input {
     margin-right: 20px;
     padding: 5px;
 }
+
+.service p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.contact-cols {
+    display: table;
+    border-collapse: collapse;
+    text-align: justify;
+    /* border: 1px solid rgba(226, 23, 23, 0.363);
+    box-shadow: 0 0 5px; */
+}
+
+.contact-col {
+    display: table-cell;
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    /* border: 1px solid rgba(0, 0, 0, 0.363);
+    box-shadow: 0 0 5px; */
+}
+
+.contact-col .row {
+    text-align: left;
+}
+
+.contact-col input:required {
+    height: 30px;
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
