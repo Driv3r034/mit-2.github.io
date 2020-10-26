@@ -22,7 +22,7 @@ header img {
     padding-left: 80px;
 }
 
-.slideshow-container {
+.slideshow-container, .dot {
     display: none;
 }
 
