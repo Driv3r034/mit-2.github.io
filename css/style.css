@@ -63,6 +63,10 @@ h1, h2 {
     color: orange;
 }
 
+header {
+    position: inherit;
+}
+
 .info_description {
     display: table-cell;
     vertical-align: middle;
@@ -153,7 +157,7 @@ a[href^=" "], .button {
     box-shadow: 0 0 0 2px rgb(202, 207, 207)
   } */
 
-form.catalog {
+form .catalog {
     display: table;
     border-collapse: collapse;
     width: 97%;
@@ -245,8 +249,13 @@ select {
     width: 50%;
     text-align: left;
     padding-left: 20px;
+    line-height: 20px;
     /* border: 1px solid rgba(0, 0, 0, 0.363);
     box-shadow: 0 0 5px; */
+}
+
+.contact-col h3 {
+    padding-bottom: 10px;
 }
 
 .contact-col .row {
@@ -263,12 +272,6 @@ textarea {
     height: 150px;
 }
 
-
-
-
-
-
-
-
-
-
+.mobile-map a {
+    display: none !important;
+}
