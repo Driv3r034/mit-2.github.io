@@ -309,10 +309,16 @@ textarea {
     padding-left: 0;
     padding-bottom: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    font-weight: bold ;
+}
+
+.review-name {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-style: italic;
 }
 
 .review-text {
-    clear: both;
-    padding-top: 10px;
     text-align: justify;
 }
