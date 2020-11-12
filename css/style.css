@@ -320,5 +320,6 @@ textarea {
 }
 
 .review-text {
+    clear: both;
     text-align: justify;
 }
