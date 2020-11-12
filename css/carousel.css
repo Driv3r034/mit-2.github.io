@@ -91,3 +91,44 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.mySlides h3, .mySlides div {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+  width: 500px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  color:rgb(90, 89, 88);
+  font-size:2em;
+  -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: black;
+}
+
+.mySlides h3 {
+  position:absolute;
+      top:0px;
+      left:0;
+  }
+
+  .mySlides div {
+    position:absolute;
+        top:50px;
+        left:0;
+    }
+
+    .mySlides h3.right {
+      position:absolute;
+        top:0px;
+        left: 50%;
+  }
+
+      .mySlides div.right {
+        position:absolute;
+          top:50px;
+          left: 50%;
+        }
+
+    
