@@ -322,3 +322,37 @@ textarea {
     clear: both;
     text-align: justify;
 }
+
+.pagination {
+    display: table;
+    margin: 0 auto;
+    /* text-align: center; */
+    margin-top: 50px;
+}
+
+.pagination a {
+    /* display: inline-block; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 8px 18px;
+}
+
+.pagination a.active {
+    background: #ff690b75;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #999;
+  }
