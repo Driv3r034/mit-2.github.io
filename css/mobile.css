@@ -158,6 +158,9 @@ iframe {
 .contact-col .button  {
     height: 40px;
     width: 230px;
+}
 
+.mobile_map {
+    display: inline;
 }
 

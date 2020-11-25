@@ -412,8 +412,12 @@ textarea {
     border-radius: 5px;
   }
 
-  a.disabled {
+a.disabled {
     pointer-events: none;
     cursor: default;
     color: #999;
-  }
+}
+
+.mobile_map {
+    display: none;
+}
