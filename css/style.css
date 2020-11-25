@@ -260,6 +260,12 @@ form input:not(.button) {
     height: 30px;
 }
 
+.catalog .rooms input:required {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
 select {
     height: 30px;
     width: 100px;
