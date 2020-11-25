@@ -16,6 +16,14 @@ header{
     display: block;   
 }
 
+a.menu-list::after {
+    top: 18px;
+}
+
+a.menu-list:hover::after {
+    top: 20px;
+}
+
 header img {
     width: 400px;
     display: block;

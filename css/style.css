@@ -54,15 +54,72 @@ h1, h2 {
     line-height: 50px;
     text-transform: uppercase;
     font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500, bold;
+}
+
+.col .menu-top a:last-child {
+    padding-right: 0;
 }
 
 .menu-top a:hover {
     text-decoration: underline;
     color: orange;
+}
+
+.menu-top ul > li {
+    display: inline-block;
+}
+
+.menu-top .sub-menu {
+    position: absolute;
+    width: 150px;
+    margin-left: -10px;
+    background: rgb(250, 216, 144);
+    display: none;
+    z-index: 1;
+}
+
+.menu-top ul.sub-menu a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-top li:hover .sub-menu {
+    display: block;
+}
+
+.menu-top li:hover .sub-menu li{
+    display: block;
+    border-bottom: 1px solid grey;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-top li:hover .sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.menu-list {
+    position: relative;
+}
+
+a.menu-list::after {
+    content: " ";
+    position: absolute;
+    border: 7px solid;
+    border-color: transparent transparent transparent black;
+    top: 9px;
+    right: 0;
+    transition: 0.5s;
+}
+
+a.menu-list:hover::after {
+    transform: rotate(90deg);
+    top: 12px;
 }
 
 header {
