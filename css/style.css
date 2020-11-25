@@ -246,24 +246,30 @@ form input:not(.button) {
     margin-top: 5px;
     height: 20px;
     font-size: 15px;
+
 }
 
 .catalog > .row:nth-child(1) {width: 20%; padding-left: 15px;}
 
 .catalog > .row:nth-child(2) {width: 20%; padding-left: 20px;}
-
+/* 
 .catalog > .row:nth-child(3) {width: 30%; padding-left: 20px; text-align: center;}
 
-.catalog > .row:nth-child(4) {width: 20%; text-align: center;}
+.catalog > .row:nth-child(4) {width: 20%; text-align: center;} */
 
-.catalog input:required {
+.catalog input:required, .catalog .squire, .catalog .price-from, .catalog .price-to {
     height: 30px;
 }
 
-.catalog .rooms input:required {
+.catalog .rooms input {
     vertical-align: middle;
     padding: 0;
     margin: 0;
+    padding-bottom: 10px;
+}
+
+.catalog .rooms {
+    line-height: 30px;
 }
 
 select {
